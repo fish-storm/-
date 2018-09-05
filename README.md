@@ -12,11 +12,16 @@
 element-ui框架的使用 存在问题
    - tooltip 无限加载 卡住(聊天室)
    - textarea组件 rows属性无效
+   - 上传组件的蜜汁问题 魔改删除操作函数会发生强制删除 删除失败等问题 现在是进行的手动删除
+   
       
       - 初步是npm判断方式兼容性更优
 
 聊天室
-   
+
+工具箱
+   - post请求 使用参数{emulateJSON:true}后 contentType会变为application/x-www-form-urlencoded 这种格式在后台是无法直接绑定为对象的 注意规范格式
+ 
       
     
 ## 后台部分
@@ -34,6 +39,10 @@ element-ui框架的使用 存在问题
       - 考虑并发 使用最高级别事务隔离
       - 防止产生坏数据 启动定时任务定期清理过期sessionId(存入操作时间)
       - 由于是单条查找 暂时不考虑性能 
+      
+ 工具箱
+   - mybatis的使用
+     - mybatis并不像ConventionDAO增删改也可以返回数据值 所以uuid放在后台生成
  
 
           
