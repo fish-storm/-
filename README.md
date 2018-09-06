@@ -3,7 +3,6 @@
 相关资料和一些感触
 
 
-# 啊啊啊啊啊啊啊啊啊啊下班了 没写完//TODO
 
  fishmaple 1.0
 
@@ -21,7 +20,7 @@ element-ui框架的使用 存在问题
 
 工具箱
    - post请求 使用参数{emulateJSON:true}后 contentType会变为application/x-www-form-urlencoded 这种格式在后台是无法直接绑定为对象的 注意规范格式
- 
+   - vue-for 并不能动态地刷新
       
     
 ## 后台部分
