@@ -22,6 +22,7 @@ element-ui框架的使用 存在问题
    - post请求 使用参数{emulateJSON:true}后 contentType会变为application/x-www-form-urlencoded 这种格式在后台是无法直接绑定为对象的 注意规范格式
    - vue-for 并不能动态地刷新，使用vue.set()和相关的变异方法可以响应式的刷新push() pop() shift() unshift() splice() sort() reverse()
    - 全角空格=&nbsp;
+   - 手机浏览器下载不能正确的获取文件名
     
 ## 后台部分
 
